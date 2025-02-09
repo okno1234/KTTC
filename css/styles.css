@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    font-family: "Montserrat";
+}
+
+.center {
+    display: block;
+    align-items: center;
+    box-shadow: 10;
+    background-color: brown;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border-radius: 3px;
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(237, 233, 11, 0.918);
+    position: sticky;
+    top: 0;
+}
+
+ li {
+    float: left;
+}
+
+.navbar li a:hover {
+    background-color: antiquewhite;
+}
+
+a {
+    display: block;
+    padding: 10px;
+}
+
+#navbar-logo {
+    float: right;
+}
+
+img {
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
