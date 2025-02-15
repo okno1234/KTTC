@@ -4,12 +4,41 @@ body {
 }
 body { min-height: 100vh; }
 
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/team.png');
+
+    /* Full height */
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.content {
+    height: 2000px; /* Adjust as needed */
+    background-color: white;
+    padding: 20px;
+}
+
+
 .nav {
-    background-color: aliceblue;
+    background-color: transparent;
     overflow: hidden;
     display: flex;
     justify-content:space-between;
     padding: 10px 20px;
+    position: relative;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-links {
@@ -122,7 +151,7 @@ a {
     to {scale: 1 1;}
 } */
 
-#animate-target img {
+/* #animate-target img {
     animation: fade-in linear;
     animation-timeline: view();
     animation-range-start: 500px;
@@ -132,4 +161,4 @@ a {
 @keyframes fade-in {
     from {scale: .8; opacity: 0; transform: translateY(100px);}
     to {scale: 1.5; opacity: 1; transform:translateY(0);}
-}
+} */
