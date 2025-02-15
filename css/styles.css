@@ -1,16 +1,53 @@
 body {
-    background-color: black;
+    background-color: rgb(117, 117, 117);
     font-family: "Montserrat";
+}
+body { min-height: 100vh; }
+
+.nav {
+    background-color: aliceblue;
+    overflow: hidden;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+        
+}
+
+.nav a {
+    font-size: small;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: #575757;
+}
+
+#main {
+    display: block;
+    align-items: center;
 }
 
 .center {
     display: block;
-    align-items: center;
     box-shadow: 10;
     background-color: brown;
     margin: 10px auto;
     padding: 10px;
     width: 80%;
+    height: 400px;
     border-radius: 3px;
 }
 
@@ -41,8 +78,58 @@ a {
     float: right;
 }
 
-img {
+.navbar-logo img {
     width: 60px;
     margin-right: 10px;
     border-radius: 50%;
+}
+
+.pp {
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(45deg);
+}
+/* 
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+} */
+
+/* .pp img {
+    animation: appear linear;
+    animation-timeline: view();
+} */
+
+/* .scroll-watcher {
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: lime;
+    width: 100%;
+    scale: 0 1;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+    to {scale: 1 1;}
+} */
+
+#animate-target img {
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: 500px;
+    animation-range-end: 700px;
+}
+
+@keyframes fade-in {
+    from {scale: .8; opacity: 0; transform: translateY(100px);}
+    to {scale: 1.5; opacity: 1; transform:translateY(0);}
 }
