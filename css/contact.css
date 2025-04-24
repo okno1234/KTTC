@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+img {
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nav {
+    background-color: aliceblue;
+    overflow: hidden;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+        
+}
+
+.nav a {
+    font-size: small;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: #575757;
+}
+
+.frame {
+    display: block;
+    box-shadow: 10;
+    margin: 10% auto;
+    padding: 10px;
+    width: 280px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 5%;
+}
+
+.title h1, p {
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+#contact {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px 10px 0px;
+    width: 80%;
+    margin: auto;
+    font-size: x-small;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid rgb(194, 194, 194);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #b3b3b3; 
+}
+
+
+#submit {
+    font-size: x-small;
+    background-color: #000000;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    width: 90%;
+    height: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 7, 7);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .icons,
+.footer .footer-links {
+    flex: 1;
+    margin: 30px 0 10px 10px; /* Adjust margin as needed */
+}
+
+.footer .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.icons img {
+    width: 20px;
+    margin: 0;
+}
